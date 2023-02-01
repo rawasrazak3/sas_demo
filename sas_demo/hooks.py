@@ -190,3 +190,58 @@ app_license = "MIT"
 # auth_hooks = [
 #	"sas_demo.auth.validate"
 # ]
+
+fixtures=[
+    {
+        "doctype": "Property Setter",
+        "filters": [
+            [
+                "name",
+                "in",
+                [ 
+                    "Sales Invoice-set_posting_time-hidden",
+                    "Sales Invoice-set_posting_time-default",
+                    "Purchase Invoice-set_posting_time-hidden",
+                    "Purchase Invoice-set_posting_time-default",
+                    "Purchase Receipt-set_posting_time-hidden",
+                    "Purchase Receipt-set_posting_time-default",
+                    "Purchase Receipt-additional_info_section-collapsible"
+                ]
+            ]
+        ]
+    },
+    {
+    	"doctype": "Custom Field",
+        "filters": [
+            [
+                "name",
+                "in",
+                [ 
+                    "Sales Invoice-others",
+                    "Sales Invoice-column_break_205",
+                    "Sales Invoice-column_break_206",
+                    "Sales Order-column_break_156",
+                    "Sales Order-column_break_157",
+                    "Purchase Order-column_break_150"
+                ]
+            ]
+        ]
+    },
+    {
+    	"doctype": "DocType Layout",
+        "filters": [
+            [
+                "name",
+                "in",
+                [ 
+                    "Quotation",
+                    "Purchase Receipt",
+                    "Purchase Order",
+                    "Purchase Invoice",
+                    "Sales Order",
+                    "Sales Invoice"
+                 ]
+            ]
+        ]
+    }
+]
