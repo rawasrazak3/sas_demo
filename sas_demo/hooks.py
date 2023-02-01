@@ -243,5 +243,11 @@ fixtures=[
                  ]
             ]
         ]
-    }
+    },
+    "Sales Invoice",
+    "Sales Order",
+    "Purchase Order",
+    "Purchase Invoice",
+    "Purchase Receipt",
+    "Quotation"
 ]
